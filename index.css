@@ -251,7 +251,7 @@ nav {
     padding: 1rem 0;
 }
 
-@media(max-width: 1300px) {
+@media(max-width: 1500px) {
    .discription-image img {
     width: 650px;
     height: 500px;
