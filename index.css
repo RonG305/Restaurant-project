@@ -256,10 +256,11 @@ nav {
 
     .about-section {
         height: auto;
-        padding: 3rem 0;
+        padding: 5rem 0;
     }
    .discription-image img {
-    width: 500px;
+    padding-top: 2.5rem;
+    width: 400px;
     height: 500px;
 }
 
