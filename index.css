@@ -252,6 +252,14 @@ nav {
 }
 
 @media(max-width: 1500px) {
+       .showcase {
+        height: auto;
+    }
+    
+       .about-section {
+        height: auto;
+    }
+    
    .discription-image img {
     width: 650px;
     height: 500px;
