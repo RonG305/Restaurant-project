@@ -280,7 +280,7 @@ nav {
 
 
     .image img {
-        width: 550px;
+        width: 100vw;
         height: 600px;
         border-radius: 0px;
     }
