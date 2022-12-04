@@ -1,3 +1,4 @@
+
 const home = document.querySelector(".home")
 home.onclick = () => {
     window.location.href = "index.html"
@@ -11,6 +12,17 @@ about.onclick = () => {
 const services = document.querySelector(".services-page")
 services.onclick = () => {
     window.location.href = "services.html"
+}
+
+const contact = document.querySelector(".contact-btn")
+contact.onclick = () => {
+    window.location.href = "contact.html"
+}
+
+const showcase = document.querySelector(".image")
+showcase.onclick = () => {
+    window.location.href = "services.html"
+    
 }
 
 const open = document.getElementById("menu-bar")
