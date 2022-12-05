@@ -19,7 +19,7 @@ html {
 
 body {
     background-color: var(--bg-primary);
-   font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif;
     
 
 }
@@ -48,6 +48,10 @@ nav {
     height: 80px;
     position: fixed;
     z-index: 100;
+}
+
+img:hover {
+    cursor: pointer;
 }
 
 .navbar {
@@ -240,6 +244,55 @@ nav {
     margin-top: 1.6rem;
     font-weight: 600;
 }
+/* newsletter */
+
+.newsletter {
+    height: 50vh;
+   background-color: rgb(241, 205, 60);
+    margin-bottom: 2rem;
+}
+
+/* Contact page */
+.contact {
+    background-image: url(./images/rest7.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 70vh;
+}
+
+.form input {
+    margin: 10px 0 ;
+    width: 700px;
+    height: 45px;
+    padding: 15px 20px;
+    border: 1px solid black;
+    outline: none;
+    font-size: 17px;
+    font-weight: 600;
+    border-radius: 7px;
+}
+.form textarea {
+    max-width: 700px;
+    min-height: 200px;
+    padding: 20px 15px ;
+    font-weight: 400;
+}
+.form #button {
+    margin-top: 2rem;
+    width: 120px;
+    height: 40px;
+    text-align: center;
+    padding: 10px 20px;
+    background-color: rgb(9, 91, 102);
+    color: #fff;
+    outline: none;
+    border: none;
+}
+
+.form #button:hover {
+    background-color: rgb(59, 224, 38);
+    transition: var(--transiton);
+}
 
 .footer {
     height: 20vh;
@@ -284,7 +337,7 @@ nav {
 
 .service img {
     width: 100%;
-    height: 200px;
+    height: 300px;
 }
 
 .footer {
@@ -419,6 +472,7 @@ nav {
         color: #fff;
         padding: 0 30px;
         font-size: 20px;
+       
     }
 
     #close-bar {

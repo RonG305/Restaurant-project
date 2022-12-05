@@ -19,11 +19,7 @@ contact.onclick = () => {
     window.location.href = "contact.html"
 }
 
-const showcase = document.querySelector(".image")
-showcase.onclick = () => {
-    window.location.href = "services.html"
-    
-}
+
 
 const open = document.getElementById("menu-bar")
 const close = document.getElementById("close-bar")
