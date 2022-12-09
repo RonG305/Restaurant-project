@@ -1,6 +1,6 @@
 :root {
     --bg-primary: rgb(16, 20, 21);
-    --button: rgb(244, 225, 24);
+    --button: rgb(242, 193, 15);
     --card: rgb(46, 52, 66);
     --container: 80%;
     --container-md:95%
@@ -49,6 +49,11 @@ nav {
     position: fixed;
     z-index: 100;
 }
+span {
+    color: rgb(241, 90, 36);
+}
+
+
 
 img:hover {
     cursor: pointer;
@@ -247,11 +252,63 @@ img:hover {
 /* newsletter */
 
 .newsletter {
+    padding: 3rem 0;
     height: 50vh;
-   background-color: rgb(241, 205, 60);
-    margin-bottom: 2rem;
+    background-color: rgb(50, 50, 81);
+    margin: 2rem 0;
 }
 
+.news-container {
+    width: var(--container);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+}
+
+
+
+.news-container h2 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    color: rgb(13, 169, 13);
+}
+.news-container p {
+    font-size: 18px;
+    font-weight: 400;
+    color: #fff;
+
+}
+
+#email {
+    width: 600px;
+    height: 40px;
+    padding: 5px 2rem;
+    margin-top: 2rem;
+    
+}
+
+#submit {
+    width: 100px;
+    height: 40px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: greenyellow;
+    outline: none;
+    border: none;
+}
+
+#submit:hover {
+    background-color: rgb(35, 173, 35);
+    transition: 0.4s ease-out;
+}
+
+#email::placeholder {
+    color: rgb(52, 51, 51);
+    font-weight: 700;
+}
 /* Contact page */
 .contact {
     background-image: url(./images/rest7.jpg);
@@ -260,38 +317,75 @@ img:hover {
     height: 70vh;
 }
 
-.form input {
-    margin: 10px 0 ;
-    width: 700px;
-    height: 45px;
-    padding: 15px 20px;
-    border: 1px solid black;
-    outline: none;
-    font-size: 17px;
-    font-weight: 600;
-    border-radius: 7px;
-}
-.form textarea {
-    max-width: 700px;
-    min-height: 200px;
-    padding: 20px 15px ;
-    font-weight: 400;
-}
-.form #button {
-    margin-top: 2rem;
-    width: 120px;
-    height: 40px;
-    text-align: center;
-    padding: 10px 20px;
-    background-color: rgb(9, 91, 102);
-    color: #fff;
-    outline: none;
-    border: none;
+.contact-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background: linear-gradient(63.3deg, rgb(40, 40, 46), rgb(137, 137, 242));
+    height: 60vh;
+    padding: 4rem 3rem;
+    width: 100%;
 }
 
-.form #button:hover {
-    background-color: rgb(59, 224, 38);
-    transition: var(--transiton);
+.contact-section .left {
+    line-height: 2rem;
+}
+
+.contact-section .form {
+    display: flex;
+    flex-direction: column;
+    
+
+}
+
+.contact-section h2 {
+    color: var(--button);
+}
+
+.contact-section h4 {
+    color: var(--button);
+}
+
+.form input {
+    width: 700px;
+    height: 40px;
+    padding: 5px 15px;
+    margin: 2px 0;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+}
+
+textarea {
+    width: 700px;
+    max-height: 500px;
+    padding: 15px;
+}
+
+#button {
+    width: 120px;
+    height: 40px;
+    margin-top: 20px;
+    background-color: blueviolet;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+}
+
+#button:hover {
+    background-color: var(--button);
+    color: black;
+    transition: 1s ease-out;
+
+}
+
+.right {
+    line-height: 1.5rem;
+}
+
+.right strong {
+    color: orange;
 }
 
 .footer {
@@ -318,6 +412,8 @@ img:hover {
 
 @media(max-width: 1500px) {
 
+
+
     .showcase {
         height: auto;
         padding: 3rem 0;
@@ -331,18 +427,33 @@ img:hover {
     padding-top: 2.5rem;
     width: 400px;
     height: 500px;
-}
+    }
 
+    .contact-section {
+        height: 70vh;
+    }
 
+    .service img {
+        width: 100%;
+        height: 300px;
+    }
 
-.service img {
-    width: 100%;
-    height: 300px;
-}
+    .form input {
+        width: 500px;
+    }
 
-.footer {
-    height: 40vh;
-}
+    textarea {
+        width: 500px;
+        max-height: 500px;
+        padding: 15px;
+    }
+    .right {
+        margin-left: 3rem;
+    }
+
+    .footer {
+        height: 40vh;
+    }
 }
 
 
@@ -401,9 +512,15 @@ img:hover {
         height: 400px;
     }
 
+    textarea {
+        width: 500px;
+        max-height: 500px;
+        padding: 15px;
+    }
     
-    
-   
+    .right {
+        margin-top: 3rem;
+    }
 
     .services .service-container {
         width: var(--container-md);
@@ -431,6 +548,21 @@ img:hover {
         display: flex;
         flex-direction: column;
         transition: 2s;
+    }
+
+    .contact-section {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        
+    }
+
+    .form {
+        width: 100%;
+    }
+
+    .form input {
+        max-width: 500px;
     }
 
     .footer {
@@ -496,6 +628,37 @@ img:hover {
         font-size: 16px;
         font-weight: 400;
     }
+
+  /* Newsletter */
+  .news-container h2 {
+    font-size: 2rem;
+    margin-bottom: 1.6rem;
+
+}
+
+#email {
+   
+    max-width: 300px;
+    height: 40px;
+    padding: 5px 2rem;
+    margin-top: 1.6rem;
+    
+}
+
+.form input {
+    max-width: 300px;
+}
+
+textarea {
+    max-width: 300px;
+    max-height: 400px;
+}
+
+.contact-section {
+    padding: 4rem 2rem;
+   
+}
+
     
 }
 
